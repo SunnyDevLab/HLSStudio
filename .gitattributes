@@ -1,0 +1,4 @@
+_internal/PySide6/Qt6WebEngineCore.dll filter=lfs diff=lfs merge=lfs -text
+_internal/playwright/driver/package/.local-browsers/chromium-1140/chrome-win/chrome.dll filter=lfs diff=lfs merge=lfs -text
+_internal/imageio_ffmpeg/binaries/ffmpeg-win64-v4.2.2.exe filter=lfs diff=lfs merge=lfs -text
+_internal/playwright/driver/node.exe filter=lfs diff=lfs merge=lfs -text

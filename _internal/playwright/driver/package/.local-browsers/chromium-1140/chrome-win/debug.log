@@ -1,0 +1,88 @@
+[1223/140145.882:ERROR:registration_protocol_win.cc(136)] TransactNamedPipe: 管道已结束。 (0x6D)
+[1223/141443.065:ERROR:registration_protocol_win.cc(136)] TransactNamedPipe: 管道已结束。 (0x6D)
+[1225/142340.549:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1225/142345.101:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0C030008C1C0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1225/142400.412:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0C030008C1C0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1226/185839.050:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/125946.981:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[1231/125947.659:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[1231/125951.986:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/125952.979:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[1231/125956.360:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/125957.397:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/130014.230:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/130014.395:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/135403.732:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1231/140950.818:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084235.820:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084236.399:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084236.946:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084237.343:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084237.439:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084238.744:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084238.922:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0327/084239.183:ERROR:registration_protocol_win.cc(136)] TransactNamedPipe: 管道已结束。 (0x6D)
+[0328/133702.957:ERROR:registration_protocol_win.cc(108)] CreateFile: 系统找不到指定的文件。 (0x2)
+[0328/141255.487:ERROR:crashpad_client_win.cc(188)] crash server did not respond, self-terminating
+[0405/205926.582:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[0405/205928.319:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[0405/205928.804:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[0405/205929.198:ERROR:main_dll_loader_win.cc(138)] Failed to load Chrome DLL from C:\Users\航天\AppData\Local\ms-playwright\chromium-1140\chrome-win\chrome.dll: 页面文件太小，无法完成操作。 (0x5AF)
+[1007/173351.921:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/173356.964:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/173408.958:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1007/174552.221:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/181024.798:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/181053.819:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/181111.244:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1007/182024.006:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/182041.415:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1007/190812.864:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/190938.308:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/192554.546:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/192632.557:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/212628.977:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/212817.579:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/212824.456:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0F0DD00542F0000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1007/212825.063:INFO:peer_connection_dependency_factory.cc(750)] Running WebRTC with a combined Network and Worker thread.
+[1007/212829.107:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1007/212829.115:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1007/213516.524:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1007/213656.074:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1008/135833.649:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1008/135837.323:INFO:peer_connection_dependency_factory.cc(750)] Running WebRTC with a combined Network and Worker thread.
+[1008/135838.790:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1008/135838.792:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1008/142312.706:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1008/142313.023:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1008/142313.150:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1008/160919.989:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1008/160923.286:INFO:peer_connection_dependency_factory.cc(750)] Running WebRTC with a combined Network and Worker thread.
+[1008/160925.022:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1008/160925.024:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1012/164621.565:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1012/164621.710:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0002F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164624.553:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0602F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164625.401:WARNING:push_pull_fifo.cc(249)] PushPullFIFO::PullAndUpdateEarmarkunderflow while pulling (underflowCount=1, availableFrames=96, requestedFrames=480, fifoLength=16384)
+[1012/164625.515:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0602F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164625.520:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0902F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164626.028:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0902F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164627.374:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[1012/164627.414:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0902F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164627.478:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0602F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164630.190:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0002F0054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164630.213:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A040340054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164630.446:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A040340054470000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164654.529:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1012/164655.357:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0802F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164655.462:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0E02F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164655.466:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0E02F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164655.474:ERROR:gl_utils.cc(426)] [.WebGL-000078E402AE9B00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[1012/164655.496:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0E02F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164655.500:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0E02F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164656.100:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0802F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164656.105:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0802F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164656.111:ERROR:gl_utils.cc(426)] [.WebGL-000078E402AE7800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[1012/164656.127:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0802F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164656.131:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0802F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.
+[1012/164656.159:ERROR:gles2_cmd_decoder_passthrough.cc(1053)] [GroupMarkerNotSet(crbug.com/242999)!:A0802F0054260000]Automatic fallback to software WebGL has been deprecated. Please use the --enable-unsafe-swiftshader flag to opt in to lower security guarantees for trusted content.

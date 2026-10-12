@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HLS Studio — README</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --border: #2d3a4f;
+      --text: #e7ecf3;
+      --muted: #8b9bb4;
+      --accent: #3b82f6;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    header {
+      text-align: center;
+      padding: 32px 20px 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    .logo { font-size: 42px; margin-bottom: 8px; }
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-top: 8px;
+      font-size: 1.05rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 14px;
+    }
+    h3 {
+      font-size: 1.02rem;
+      margin: 18px 0 8px;
+      color: #c5d0e0;
+    }
+    p, li { color: #c9d4e4; }
+    p { margin-bottom: 10px; }
+    ul, ol {
+      padding-left: 1.35em;
+      margin: 8px 0 12px;
+    }
+    li { margin: 6px 0; }
+    .warn-box {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    .warn-box strong { color: var(--warn); }
+    .danger-box {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    .danger-box strong { color: var(--danger); }
+    .ok-box {
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    .step-list li { margin: 10px 0; }
+    code, .mono {
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.9em;
+      background: rgba(0,0,0,0.35);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: rgba(0,0,0,0.25);
+      color: #a8b8d0;
+      font-weight: 600;
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (max-width: 640px) {
+      .feature-grid { grid-template-columns: 1fr; }
+      section { padding: 18px 16px; }
+    }
+    .feature-item {
+      background: rgba(0,0,0,0.22);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .feature-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #e8eef7;
+    }
+    .feature-item span { color: var(--muted); font-size: 0.92rem; }
+    .lang-zh, .lang-en { display: none; }
+    html.zh .lang-zh { display: block; }
+    html.en .lang-en { display: block; }
+    html.zh span.lang-zh { display: inline; }
+    html.en span.lang-en { display: inline; }
+    html.zh h2 span.lang-zh,
+    html.en h2 span.lang-en,
+    html.zh h1 span.lang-zh,
+    html.en h1 span.lang-en,
+    html.zh .subtitle span.lang-zh,
+    html.en .subtitle span.lang-en { display: inline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">&#9670;</div>
+      <h1>
+        <span class="lang-en">HLS Studio</span>
+        <span class="lang-zh">HLS Studio</span>
+      </h1>
+      <p class="subtitle">
+        <span class="lang-en">Professional HLS Video Archiving Workstation</span>
+        <span class="lang-zh">专业 HLS 视频归档工作站</span>
+      </p>
+    </header>
+
+    <section>
+      <h2>
+        <span class="lang-en">Security &amp; Antivirus — Why the App May Not Open or Run</span>
+        <span class="lang-zh">安全与杀毒软件 — 程序无法打开或无法运行的原因</span>
+      </h2>
+
+      <div class="lang-en">
+        <p>HLS Studio is an independently developed Windows application. It is <strong>not</strong> a virus. However, because it is a newly packaged desktop program (often distributed outside major app stores), and because it includes components such as an embedded browser engine used only to analyze page network requests, some antivirus products may treat it as “unknown,” “potentially unwanted,” or even quarantine the executable.</p>
+        <div class="danger-box">
+          <p><strong>This can completely prevent the software from opening or running</strong> — for example: the installer/exe is deleted after download; double-click does nothing; Windows shows “Windows protected your PC”; the process starts and exits immediately; browser analysis fails because related files were removed.</p>
+        </div>
+        <div class="warn-box">
+          <p><strong>Important:</strong> A security warning does not necessarily mean the file is malicious, but it should always be taken seriously. Only proceed after you have confirmed the package came from a trusted release source.</p>
+        </div>
+
+        <h3>Typical symptoms caused by antivirus / SmartScreen</h3>
+        <table>
+          <thead>
+            <tr><th>Symptom</th><th>Possible cause</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Download finishes, then the file “disappears”</td><td>Real-time protection quarantined or deleted the exe</td></tr>
+            <tr><td>Double-click does nothing / program exits at once</td><td>Process blocked, or dependent files removed</td></tr>
+            <tr><td>“Windows protected your PC” / SmartScreen</td><td>Unknown publisher / low reputation for a new build</td></tr>
+            <tr><td>Alert about Trojan / Heuristic / PUA</td><td>Heuristic or machine-learning false positive on packed Python apps</td></tr>
+            <tr><td>Visible browser / analysis fails after update</td><td>Antivirus isolated Chromium or other bundled components</td></tr>
+          </tbody>
+        </table>
+
+        <h3>How to resolve (recommended order)</h3>
+        <ol class="step-list">
+          <li><strong>Confirm the source</strong> — Only use the official release channel. Do not run copies from unknown re-uploads.</li>
+          <li><strong>Check security history</strong> — Open your antivirus “Protection history” / quarantine. Note the detection name and the exact file path (e.g. <span class="mono">HLSStudio.exe</span>).</li>
+          <li><strong>Restore the file</strong> — If it was quarantined, restore it from quarantine so the program can start again.</li>
+          <li><strong>Add an exclusion (allow list)</strong> — Add the install folder or the main executable to exclusions / trusted files, for example:
+            <ul>
+              <li>Windows Security → Virus &amp; threat protection → Manage settings → Exclusions → Add the HLS Studio folder</li>
+              <li>Or the equivalent “Trusted zone / Allow list” in third-party antivirus (360, Huorong, Kaspersky, etc.)</li>
+            </ul>
+          </li>
+          <li><strong>SmartScreen (Windows)</strong> — If you see “Windows protected your PC”: click <em>More info</em> → <em>Run anyway</em> only after you trust the source.</li>
+          <li><strong>Re-download</strong> — After restoring and excluding, download again if the original file was deleted, then verify integrity when a SHA-256 checksum is published.</li>
+          <li><strong>Report false positives</strong> — Send the detection name, product version, and file hash to us so we can submit the build for vendor review. Please do <strong>not</strong> turn off antivirus entirely.</li>
+        </ol>
+
+        <div class="ok-box">
+          <p><strong>Safe practice:</strong> Prefer folder-level exclusion for the official install directory over disabling real-time protection. Keep your antivirus enabled.</p>
+        </div>
+        <p>Please do not disable antivirus protection or bypass security warnings unless the file has been independently verified as safe and you understand the risk.</p>
+      </div>
+
+      <div class="lang-zh">
+        <p>HLS Studio 是独立开发的 Windows 应用程序，<strong>本身不是病毒</strong>。但由于它是较新的桌面打包程序（通常不通过应用商店分发），且内含用于分析页面网络请求的浏览器组件，部分杀毒软件可能将其判定为「未知程序」「潜在风险」甚至直接隔离可执行文件。</p>
+        <div class="danger-box">
+          <p><strong>这可能导致软件完全无法打开或无法运行</strong>，例如：下载后文件被删除；双击无反应；系统提示「Windows 已保护你的电脑」；进程启动后立刻退出；分析页面失败（相关组件被隔离）。</p>
+        </div>
+        <div class="warn-box">
+          <p><strong>重要：</strong>安全提示并不必然表示文件是恶意软件，但仍应认真对待。请先确认安装包来自可信的官方发布渠道，再进行后续操作。</p>
+        </div>
+
+        <h3>杀毒 / SmartScreen 常见表现</h3>
+        <table>
+          <thead>
+            <tr><th>现象</th><th>可能原因</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>下载完成，文件「消失」</td><td>实时防护已隔离或删除了 exe</td></tr>
+            <tr><td>双击无反应 / 程序一闪退出</td><td>进程被拦截，或依赖文件被删除</td></tr>
+            <tr><td>提示「Windows 已保护你的电脑」</td><td>新版本信誉不足 / 未知发布者（SmartScreen）</td></tr>
+            <tr><td>提示木马 / 启发式 / PUA</td><td>对 Python 打包程序的启发式误报</td></tr>
+            <tr><td>更新后可见浏览器 / 分析失败</td><td>Chromium 等组件被隔离</td></tr>
+          </tbody>
+        </table>
+
+        <h3>解决办法（建议按顺序操作）</h3>
+        <ol class="step-list">
+          <li><strong>确认来源</strong> — 只使用官方发布渠道的安装包，不要运行来历不明的二次上传文件。</li>
+          <li><strong>查看防护记录</strong> — 打开杀毒软件的「防护记录 / 隔离区」，记下检测名称与文件路径（如 <span class="mono">HLSStudio.exe</span>）。</li>
+          <li><strong>恢复文件</strong> — 若已被隔离，请先从隔离区恢复，否则程序无法启动。</li>
+          <li><strong>加入信任区 / 白名单</strong> — 将安装目录或主程序加入排除项，例如：
+            <ul>
+              <li>Windows 安全中心 → 病毒和威胁防护 → 管理设置 → 排除项 → 添加 HLS Studio 所在文件夹</li>
+              <li>或 360、火绒、卡巴斯基等软件中的「信任区 / 白名单 / 允许运行」</li>
+            </ul>
+          </li>
+          <li><strong>SmartScreen 提示</strong> — 若出现「Windows 已保护你的电脑」：在确认来源可信后，点击「更多信息」→「仍要运行」。</li>
+          <li><strong>重新下载</strong> — 恢复并加白后，若原文件已被删除，请重新下载；若官方提供了 SHA-256，请核对校验值。</li>
+          <li><strong>反馈误报</strong> — 将检测名称、软件版本、文件哈希发给我们，便于向安全厂商提交复核。<strong>请勿彻底关闭杀毒软件。</strong></li>
+        </ol>
+
+        <div class="ok-box">
+          <p><strong>更稳妥的做法：</strong>优先对官方安装目录做「文件夹排除」，而不是关闭实时防护。请保持杀毒软件处于开启状态。</p>
+        </div>
+        <p>在文件未经独立验证为安全之前，请勿关闭杀毒软件或强行绕过安全提示。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>
+        <span class="lang-en">Introduction</span>
+        <span class="lang-zh">简介</span>
+      </h2>
+      <div class="lang-en">
+        <p>HLS Studio is a Windows desktop application designed to make detecting, downloading, and archiving HLS video streams easier.</p>
+        <p>Many online video platforms deliver media as segmented streams rather than a single file. HLS Studio helps simplify this process with a dedicated desktop interface and practical tools for working with compatible media streams.</p>
+        <p>It is intended for video research, media archiving, and other legitimate workflows involving content you are authorized to download.</p>
+      </div>
+      <div class="lang-zh">
+        <p>HLS Studio 是一款 Windows 桌面应用，用于更方便地检测、下载与归档 HLS 视频流。</p>
+        <p>许多在线视频平台以分段流媒体而非单一文件传输内容。HLS Studio 提供专用桌面界面和实用工具，帮助你处理兼容的媒体流。</p>
+        <p>本软件面向视频研究、媒体归档等合法场景，仅应用于你有权下载或归档的内容。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>
+        <span class="lang-en">Key Features</span>
+        <span class="lang-zh">主要功能</span>
+      </h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <strong><span class="lang-en">Video Content Detection</span><span class="lang-zh">视频内容检测</span></strong>
+          <span class="lang-en">Detect accessible video streams and media resources from supported pages.</span>
+          <span class="lang-zh">从受支持的页面检测可访问的视频流与媒体资源。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">Concurrent Downloads</span><span class="lang-zh">多线程并发下载</span></strong>
+          <span class="lang-en">Download multiple media segments efficiently with adjustable concurrency.</span>
+          <span class="lang-zh">高效下载多个媒体分片，可调节并发数。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">Encrypted Video Decoding</span><span class="lang-zh">加密视频解码</span></strong>
+          <span class="lang-en">Decode compatible encrypted video streams when decryption keys are provided by the media source.</span>
+          <span class="lang-zh">在媒体源提供解密密钥时，对兼容的加密视频流进行解码处理。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">Direct Video Downloads</span><span class="lang-zh">直链视频下载</span></strong>
+          <span class="lang-en">Download directly accessible progressive video URLs (e.g. MP4 / WebM).</span>
+          <span class="lang-zh">下载可直接访问的渐进式视频地址（如 MP4 / WebM）。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">DASH / Split A/V Tracks</span><span class="lang-zh">DASH / 音视频拆流</span></strong>
+          <span class="lang-en">Support basic DASH and split video/audio tracks (merge with ffmpeg when available).</span>
+          <span class="lang-zh">支持基础 DASH 以及分离的视频轨与音轨（有 ffmpeg 时可自动合并）。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">Visible Browser Mode</span><span class="lang-zh">可见浏览器模式</span></strong>
+          <span class="lang-en">Open a real browser window, play the video manually, then capture the stream currently playing.</span>
+          <span class="lang-zh">弹出真实浏览器窗口，手动播放后再捕获当前正在播放的流。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">Proxy &amp; Resume</span><span class="lang-zh">代理与断点续下</span></strong>
+          <span class="lang-en">Optional HTTP proxy; skip already-downloaded segments for safer retries.</span>
+          <span class="lang-zh">可选 HTTP 代理；已下载分片可跳过，便于重试。</span>
+        </div>
+        <div class="feature-item">
+          <strong><span class="lang-en">Windows Desktop UI</span><span class="lang-zh">Windows 桌面界面</span></strong>
+          <span class="lang-en">Manage URLs, output paths, progress, and logs in one professional workstation interface.</span>
+          <span class="lang-zh">在同一专业工作站界面中管理网址、输出路径、进度与日志。</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>
+        <span class="lang-en">How to Use</span>
+        <span class="lang-zh">使用说明</span>
+      </h2>
+      <div class="lang-en">
+        <h3>1. Launch &amp; AI Analysis</h3>
+        <ul>
+          <li>Start HLS Studio and open the main workspace.</li>
+          <li>The app can automatically invoke large AI models to analyze online video pages and related media requests.</li>
+          <li>Based on the analysis result, it performs the corresponding detection and download processing for compatible streams.</li>
+        </ul>
+        <h3>2. Prepare a Task</h3>
+        <ol class="step-list">
+          <li><strong>Video page URL</strong> — Paste the page URL of content you are authorized to download or archive.</li>
+          <li><strong>Network</strong> — Optionally enable a proxy (e.g. <span class="mono">http://127.0.0.1:7890</span>) and set concurrent download workers.</li>
+          <li><strong>Visible browser</strong> — Enable this if the site requires manual play, login, or CAPTCHA before media requests appear.</li>
+          <li><strong>Output</strong> — Choose an output folder and file name.</li>
+        </ol>
+        <h3>3. Start Download</h3>
+        <ul>
+          <li>Click <strong>Start Download</strong>. The app analyzes the page with AI assistance and processes compatible video streams.</li>
+          <li><strong>Background mode</strong> — Automatically detects video streams and related media requests on the page.</li>
+          <li><strong>Visible browser mode</strong> — Play the desired video in the opened window, then click the red <strong>Download Playing Video</strong> button at the top of the page. Keep the browser open to switch videos and download more; close the window when finished.</li>
+          <li>Watch progress and the run log. You can cancel a running task at any time.</li>
+        </ul>
+      </div>
+      <div class="lang-zh">
+        <h3>1. 启动与智能分析</h3>
+        <ul>
+          <li>启动 HLS Studio，进入主工作界面。</li>
+          <li>程序可自动调用 AI 大模型，分析网络视频页面及相关媒体请求。</li>
+          <li>根据分析结果，对兼容的视频流进行相应的检测与下载处理。</li>
+        </ul>
+        <h3>2. 准备任务</h3>
+        <ol class="step-list">
+          <li><strong>视频页面 URL</strong> — 粘贴你有权下载或归档的视频页面地址。</li>
+          <li><strong>网络设置</strong> — 可按需启用代理（例如 <span class="mono">http://127.0.0.1:7890</span>），并设置并发下载数。</li>
+          <li><strong>可见浏览器</strong> — 若站点需要手动点击播放、登录或过验证码后才会发出媒体请求，请勾选此项。</li>
+          <li><strong>输出设置</strong> — 选择输出目录与文件名。</li>
+        </ol>
+        <h3>3. 开始下载</h3>
+        <ul>
+          <li>点击<strong>开始下载</strong>。程序将借助 AI 分析页面，并对兼容的视频流做相应处理。</li>
+          <li><strong>后台模式</strong> — 自动检测页面中的视频流及相关媒体请求。</li>
+          <li><strong>可见浏览器模式</strong> — 在弹出的窗口中播放目标视频，然后点击页面顶部红色<strong>下载正在播放的视频</strong>按钮。浏览器可保持打开以切换其它视频继续下载；全部完成后请手动关闭浏览器窗口。</li>
+          <li>关注进度条与运行日志。可随时取消正在进行的任务。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>
+        <span class="lang-en">Feedback</span>
+        <span class="lang-zh">反馈</span>
+      </h2>
+      <div class="lang-en">
+        <p>HLS Studio is shared to learn from people working with online video, media archiving, and video research.</p>
+        <ul>
+          <li>What is the biggest challenge you face when downloading or archiving online videos?</li>
+          <li>Which features would make your workflow easier?</li>
+          <li>What would you like to see improved in HLS Studio?</li>
+        </ul>
+        <p>Thanks for checking out HLS Studio. Your feedback and suggestions are greatly appreciated.</p>
+      </div>
+      <div class="lang-zh">
+        <p>我们希望通过分享 HLS Studio，向从事在线视频、媒体归档与视频研究的用户学习。</p>
+        <ul>
+          <li>你在下载或归档在线视频时最大的困难是什么？</li>
+          <li>哪些功能会让你的工作流程更轻松？</li>
+          <li>你希望 HLS Studio 在哪些方面继续改进？</li>
+        </ul>
+        <p>感谢试用 HLS Studio。欢迎提出任何反馈与建议。</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <p class="lang-en">HLS Studio — Professional Video Archiving Workstation</p>
+      <p class="lang-zh">HLS Studio — 专业视频归档工作站</p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      function isChineseOS() {
+        try {
+          var list = (navigator.languages && navigator.languages.length)
+            ? navigator.languages
+            : [navigator.language || navigator.userLanguage || "en"];
+          for (var i = 0; i < list.length; i++) {
+            var code = String(list[i] || "").toLowerCase();
+            if (code.indexOf("zh") === 0) return true;
+          }
+        } catch (e) {}
+        return false;
+      }
+      var lang = isChineseOS() ? "zh" : "en";
+      document.documentElement.className = lang;
+      document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+      document.title = lang === "zh"
+        ? "HLS Studio — 使用说明"
+        : "HLS Studio — README";
+    })();
+  </script>
+</body>
+</html>
