@@ -176,12 +176,12 @@
       </p>
     </header>
 
+    <!-- Security -->
     <section>
       <h2>
         <span class="lang-en">Security &amp; Antivirus — Why the App May Not Open or Run</span>
         <span class="lang-zh">安全与杀毒软件 — 程序无法打开或无法运行的原因</span>
       </h2>
-
       <div class="lang-en">
         <p>HLS Studio is an independently developed Windows application. It is <strong>not</strong> a virus. However, because it is a newly packaged desktop program (often distributed outside major app stores), and because it includes components such as an embedded browser engine used only to analyze page network requests, some antivirus products may treat it as “unknown,” “potentially unwanted,” or even quarantine the executable.</p>
         <div class="danger-box">
@@ -190,7 +190,6 @@
         <div class="warn-box">
           <p><strong>Important:</strong> A security warning does not necessarily mean the file is malicious, but it should always be taken seriously. Only proceed after you have confirmed the package came from a trusted release source.</p>
         </div>
-
         <h3>Typical symptoms caused by antivirus / SmartScreen</h3>
         <table>
           <thead>
@@ -204,7 +203,6 @@
             <tr><td>Visible browser / analysis fails after update</td><td>Antivirus isolated Chromium or other bundled components</td></tr>
           </tbody>
         </table>
-
         <h3>How to resolve (recommended order)</h3>
         <ol class="step-list">
           <li><strong>Confirm the source</strong> — Only use the official release channel. Do not run copies from unknown re-uploads.</li>
@@ -220,13 +218,11 @@
           <li><strong>Re-download</strong> — After restoring and excluding, download again if the original file was deleted, then verify integrity when a SHA-256 checksum is published.</li>
           <li><strong>Report false positives</strong> — Send the detection name, product version, and file hash to us so we can submit the build for vendor review. Please do <strong>not</strong> turn off antivirus entirely.</li>
         </ol>
-
         <div class="ok-box">
           <p><strong>Safe practice:</strong> Prefer folder-level exclusion for the official install directory over disabling real-time protection. Keep your antivirus enabled.</p>
         </div>
         <p>Please do not disable antivirus protection or bypass security warnings unless the file has been independently verified as safe and you understand the risk.</p>
       </div>
-
       <div class="lang-zh">
         <p>HLS Studio 是独立开发的 Windows 应用程序，<strong>本身不是病毒</strong>。但由于它是较新的桌面打包程序（通常不通过应用商店分发），且内含用于分析页面网络请求的浏览器组件，部分杀毒软件可能将其判定为「未知程序」「潜在风险」甚至直接隔离可执行文件。</p>
         <div class="danger-box">
@@ -235,7 +231,6 @@
         <div class="warn-box">
           <p><strong>重要：</strong>安全提示并不必然表示文件是恶意软件，但仍应认真对待。请先确认安装包来自可信的官方发布渠道，再进行后续操作。</p>
         </div>
-
         <h3>杀毒 / SmartScreen 常见表现</h3>
         <table>
           <thead>
@@ -249,7 +244,6 @@
             <tr><td>更新后可见浏览器 / 分析失败</td><td>Chromium 等组件被隔离</td></tr>
           </tbody>
         </table>
-
         <h3>解决办法（建议按顺序操作）</h3>
         <ol class="step-list">
           <li><strong>确认来源</strong> — 只使用官方发布渠道的安装包，不要运行来历不明的二次上传文件。</li>
@@ -265,7 +259,6 @@
           <li><strong>重新下载</strong> — 恢复并加白后，若原文件已被删除，请重新下载；若官方提供了 SHA-256，请核对校验值。</li>
           <li><strong>反馈误报</strong> — 将检测名称、软件版本、文件哈希发给我们，便于向安全厂商提交复核。<strong>请勿彻底关闭杀毒软件。</strong></li>
         </ol>
-
         <div class="ok-box">
           <p><strong>更稳妥的做法：</strong>优先对官方安装目录做「文件夹排除」，而不是关闭实时防护。请保持杀毒软件处于开启状态。</p>
         </div>
@@ -273,6 +266,43 @@
       </div>
     </section>
 
+    <!-- System Requirements -->
+    <section>
+      <h2>
+        <span class="lang-en">System Requirements</span>
+        <span class="lang-zh">运行环境要求</span>
+      </h2>
+      <div class="lang-en">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Requirement</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Operating system</td>
+              <td><strong>Windows 10 or later</strong> (64-bit recommended).<br />
+              Windows 7 / 8 / 8.1 are <strong>not supported</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="lang-zh">
+        <table>
+          <thead>
+            <tr><th>项目</th><th>要求</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>操作系统</td>
+              <td><strong>Windows 10 及以上</strong>（建议 64 位）。<br />
+              <strong>不支持</strong> Windows 7 / 8 / 8.1。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Introduction -->
     <section>
       <h2>
         <span class="lang-en">Introduction</span>
@@ -290,6 +320,7 @@
       </div>
     </section>
 
+    <!-- Key Features -->
     <section>
       <h2>
         <span class="lang-en">Key Features</span>
@@ -339,17 +370,18 @@
       </div>
     </section>
 
+    <!-- How to Use -->
     <section>
       <h2>
         <span class="lang-en">How to Use</span>
         <span class="lang-zh">使用说明</span>
       </h2>
       <div class="lang-en">
-        <h3>1. Launch &amp; AI Analysis</h3>
+        <h3>1. Launch &amp; Analysis</h3>
         <ul>
           <li>Start HLS Studio and open the main workspace.</li>
-          <li>The app can automatically invoke large AI models to analyze online video pages and related media requests.</li>
-          <li>Based on the analysis result, it performs the corresponding detection and download processing for compatible streams.</li>
+          <li>The app analyzes the video page and related media network requests.</li>
+          <li>Based on the result, it runs detection and download processing for compatible streams.</li>
         </ul>
         <h3>2. Prepare a Task</h3>
         <ol class="step-list">
@@ -360,18 +392,24 @@
         </ol>
         <h3>3. Start Download</h3>
         <ul>
-          <li>Click <strong>Start Download</strong>. The app analyzes the page with AI assistance and processes compatible video streams.</li>
+          <li>Click <strong>Start Download</strong>. The app analyzes the page and processes compatible video streams.</li>
           <li><strong>Background mode</strong> — Automatically detects video streams and related media requests on the page.</li>
-          <li><strong>Visible browser mode</strong> — Play the desired video in the opened window, then click the red <strong>Download Playing Video</strong> button at the top of the page. Keep the browser open to switch videos and download more; close the window when finished.</li>
+          <li><strong>Visible browser mode</strong> — Play the desired video in the opened window, then use the on-page buttons:
+            <ul>
+              <li>Red <strong>Download Playing Video</strong> — download only the stream currently in focus</li>
+              <li>Blue <strong>Download All Captured</strong> — download all content groups captured on this page</li>
+            </ul>
+            Keep the browser open to switch videos and download more; close the window when finished.
+          </li>
           <li>Watch progress and the run log. You can cancel a running task at any time.</li>
         </ul>
       </div>
       <div class="lang-zh">
-        <h3>1. 启动与智能分析</h3>
+        <h3>1. 启动与分析</h3>
         <ul>
           <li>启动 HLS Studio，进入主工作界面。</li>
-          <li>程序可自动调用 AI 大模型，分析网络视频页面及相关媒体请求。</li>
-          <li>根据分析结果，对兼容的视频流进行相应的检测与下载处理。</li>
+          <li>程序会分析视频页面及相关媒体网络请求。</li>
+          <li>根据结果，对兼容的视频流进行检测与下载处理。</li>
         </ul>
         <h3>2. 准备任务</h3>
         <ol class="step-list">
@@ -382,14 +420,21 @@
         </ol>
         <h3>3. 开始下载</h3>
         <ul>
-          <li>点击<strong>开始下载</strong>。程序将借助 AI 分析页面，并对兼容的视频流做相应处理。</li>
+          <li>点击<strong>开始下载</strong>。程序将分析页面，并对兼容的视频流做相应处理。</li>
           <li><strong>后台模式</strong> — 自动检测页面中的视频流及相关媒体请求。</li>
-          <li><strong>可见浏览器模式</strong> — 在弹出的窗口中播放目标视频，然后点击页面顶部红色<strong>下载正在播放的视频</strong>按钮。浏览器可保持打开以切换其它视频继续下载；全部完成后请手动关闭浏览器窗口。</li>
+          <li><strong>可见浏览器模式</strong> — 在弹出的窗口中播放目标视频，然后使用页面上的按钮：
+            <ul>
+              <li>红色<strong>下载正在播放的视频</strong> — 仅下载当前播放焦点对应的流</li>
+              <li>蓝色<strong>下载全部已捕获</strong> — 下载本页已捕获的全部成片</li>
+            </ul>
+            浏览器可保持打开以切换其它视频继续下载；全部完成后请手动关闭浏览器窗口。
+          </li>
           <li>关注进度条与运行日志。可随时取消正在进行的任务。</li>
         </ul>
       </div>
     </section>
 
+    <!-- Feedback -->
     <section>
       <h2>
         <span class="lang-en">Feedback</span>
@@ -418,9 +463,12 @@
     <div class="footer">
       <p class="lang-en">HLS Studio — Professional Video Archiving Workstation</p>
       <p class="lang-zh">HLS Studio — 专业视频归档工作站</p>
+      <p style="margin-top:8px;opacity:0.85;">
+        <span class="lang-en">Requires Windows 10 or later</span>
+        <span class="lang-zh">需要 Windows 10 及以上</span>
+      </p>
     </div>
   </div>
-
   <script>
     (function () {
       function isChineseOS() {
